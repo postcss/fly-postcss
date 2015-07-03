@@ -13,7 +13,7 @@ $ npm install --save-dev fly-postcss
 ## Example
 
 ```js
-exports.stylus = function* () {
+exports.postcss = function* () {
   yield this
     .source('src/*.css')
     .postcss([
