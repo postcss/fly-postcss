@@ -3,17 +3,19 @@
   "version": "0.0.1",
   "description": "Fly plugin for PostCSS",
   "main": "index.js",
-  "scripts": {
-    "test": "tape test"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/morishitter/fly-postcss/git"
   },
-  "keywords": ["fly","flyplugin","postcss"],
+  "keywords": [
+    "fly",
+    "flyplugin",
+    "postcss"
+  ],
   "author": "Masaaki Morishita",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-  }
+  "dependencies": {
+    "postcss": "^4.1.13"
+  },
+  "devDependencies": {}
 }
