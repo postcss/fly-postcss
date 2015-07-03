@@ -1,14 +1,30 @@
-# fly-postcss [![Build Status](https://travis-ci.org/morishitter/fly-postcss.svg)](https://travis-ci.org/morishitter/fly-postcss)
+# fly-postcss
 
-Fly plugin for PostCSS
+> [Fly](https://github.com/flyjs/fly) plugin for [PostCSS](https://github.com/postcss/postcss)
 
-## Installation
+## Usage
+
+### Install
 
 ```shell
-$ npm install fly-postcss
+$ npm install --save-dev fly-postcss
 ```
 
 ## Example
+
+```js
+exports.stylus = function* () {
+  yield this
+    .source('src/*.css')
+    .postcss([
+        require('cssnext')(), require('cssnano')()
+    ], {
+        from: 'a.css',
+        to: 'a.out.css'
+    })
+    .target('dist')
+}
+```
 
 ## License
 
