@@ -1,4 +1,8 @@
-# fly-postcss
+<div align="center">
+  <a href="http://github.com/flyjs/fly">
+    <img width=200px  src="https://cloud.githubusercontent.com/assets/8317250/8430194/35c6043a-1f6a-11e5-8cbd-af6cc86baa84.png">
+  </a>
+</div>
 
 > [Fly](https://github.com/flyjs/fly) plugin for [PostCSS](https://github.com/postcss/postcss)
 
@@ -7,10 +11,10 @@
 ### Install
 
 ```shell
-$ npm install --save-dev fly-postcss
+$ npm install -D fly-postcss
 ```
 
-## Example
+### Example
 
 ```js
 exports.postcss = function* () {
@@ -28,6 +32,4 @@ exports.postcss = function* () {
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 Masaaki Morishita
+[MIT](http://opensource.org/licenses/MIT) © [Masaaki Morishita][author]
