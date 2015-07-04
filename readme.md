@@ -5,6 +5,8 @@
 </div>
 
 > [Fly](https://github.com/flyjs/fly) plugin for [PostCSS](https://github.com/postcss/postcss)
+>
+[![][fly-badge]][fly] ![][mit-badge]
 
 ## Usage
 
