@@ -35,3 +35,12 @@ exports.postcss = function* () {
 ## License
 
 [MIT](http://opensource.org/licenses/MIT) © [Masaaki Morishita][author]
+
+
+[author]: https://github.com/morishitter
+
+[fly]: https://www.github.com/flyjs/fly
+
+[fly-badge]: https://img.shields.io/badge/fly-JS-05B3E1.svg?style=flat-square
+[mit-badge]: https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square
+
