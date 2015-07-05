@@ -23,7 +23,8 @@ exports.postcss = function* () {
   yield this
     .source('src/*.css')
     .postcss([
-        require('cssnext')(), require('cssnano')()
+        require('cssnext')(),
+        require('cssnano')()
     ], {
         from: 'a.css',
         to: 'a.out.css'
