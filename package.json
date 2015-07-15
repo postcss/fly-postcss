@@ -1,21 +1,40 @@
 {
   "name": "fly-postcss",
-  "version": "0.2.0",
-  "description": "Fly plugin for PostCSS",
+  "version": "0.0.0",
+  "description": "Postcss plugin for Fly.",
+  "license": "MIT",
+  "repository": "https://github.com/morishitter/fly-postcss",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/morishitter/fly-postcss/git"
-  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "fly",
-    "flyplugin",
     "postcss"
   ],
-  "author": "Masaaki Morishita",
-  "license": "MIT",
-  "dependencies": {
-    "postcss": "^4.1.13"
+  "scripts": {
+    "lint": "eslint *.js",
+    "setup": "npm i && npm test &&",
+    "test": "npm run lint && tape test/*.js | tspec",
+    "build": "echo No build task specified.",
+    "deploy": "npm run test && git push origin master && npm publish",
+    "test-ci": "node --harmony --harmony_arrow_functions ./node_modules/tape/bin/tape test/*.js"
   },
-  "devDependencies": {}
+  "author": {
+    "name": "morishitter",
+    "email": "morishitter@gmail.com",
+    "url": "http://github.com/morishitter"
+  },
+  "dependencies": {
+    "postcss": "^4.1.16"
+  },
+  "devDependencies": {
+    "eslint": "^0.21.2",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.11.0"
+  }
 }
