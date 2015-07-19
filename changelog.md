@@ -1,3 +1,7 @@
+## 0.3.1
+
+- Use new logo
+
 ## 0.3.0
 
 - Use generator-fly
