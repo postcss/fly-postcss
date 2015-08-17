@@ -1,7 +1,7 @@
 module.exports = function () {
-  this.filter("postcss", (source, processors, options) => {
+  this.filter("postcss", (data, processors, options) => {
     try {
-      return require("postcss")(processors).process(source, options).css
+      return require("postcss")(processors).process(data.toString(), options).css
     } catch (e) { throw e }
   })
 }
