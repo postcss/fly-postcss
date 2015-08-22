@@ -1,3 +1,7 @@
+## 0.5.0
+
+- Update to fly@0.7.0 new API
+
 ## 0.4.0
 
 - Handle raw to string conversion
