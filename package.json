@@ -27,7 +27,7 @@
     "url": "http://github.com/morishitter"
   },
   "dependencies": {
-    "postcss": "^4.1.16"
+    "postcss": "^5.0.3"
   },
   "devDependencies": {
     "eslint": "^0.21.2",
