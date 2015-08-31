@@ -1,3 +1,7 @@
+## 1.0.0
+
+- Support PostCSS 5.0
+
 ## 0.5.0
 
 - Update to fly@0.7.0 new API
