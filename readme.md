@@ -4,7 +4,7 @@
   </a>
 </div>
 
-> [PostCSS](https://github.com/postcss/postcss) plugin for _[Fly][fly]_.
+> _[Fly][fly]_ plugin for [PostCSS](https://github.com/postcss/postcss).
 
 [![][fly-badge]][fly]
 [![npm package][npm-ver-link]][releases]
