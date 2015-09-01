@@ -27,10 +27,10 @@ npm install -D fly-postcss
 export default function* () {
   yield this
     .source('src/*.css')
-    .postcss([
-      require('cssnext')(),
-      require('cssnano')()
-    ], {
+    .postcss({
+      processors: [
+        require('cssnano')()
+      ],
       from: 'a.css',
       to: 'a.out.css'
     })
