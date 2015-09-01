@@ -53,5 +53,5 @@ export default function* () {
 [npm-pkg-link]: https://www.npmjs.org/package/fly-postcss
 [npm-ver-link]: https://img.shields.io/npm/v/fly-postcss.svg?style=flat-square
 [dl-badge]:     http://img.shields.io/npm/dm/fly-postcss.svg?style=flat-square
-[travis-link]:  https://travis-ci.org/morishitter/fly-postcss
-[travis-badge]: http://img.shields.io/travis/morishitter/fly-postcss.svg?style=flat-square
+[travis-link]:  https://travis-ci.org/postcss/fly-postcss
+[travis-badge]: http://img.shields.io/travis/postcss/fly-postcss.svg?style=flat-square
