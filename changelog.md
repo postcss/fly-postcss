@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Fix API, `processors` is in options.
+
 ## 1.0.0
 
 - Support PostCSS 5.0
