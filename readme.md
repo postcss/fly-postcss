@@ -28,11 +28,15 @@ export default function* () {
   yield this
     .source('src/*.css')
     .postcss({
-      processors: [
-        require('cssnano')()
+      plugins: [
+        require('precss'),
+        require('autoprefixer')
       ],
-      from: 'a.css',
-      to: 'a.out.css'
+      options: {
+        parser: require('postcss-scss'),
+        from: 'a.css',
+        to: 'a.out.css'
+      }
     })
     .target('dist')
 }
