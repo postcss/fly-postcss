@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Exposing `plugins` (passed directly to `postcss()`), and `options` (passed to `postcss().process(css, options)`)
+- Fixed async issues by wrapping in a promise and resolving the required Fly API result
+
 ## 1.1.0
 
 - Fix API, `processors` is in options.
