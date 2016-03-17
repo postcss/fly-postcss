@@ -2,7 +2,9 @@ var postcss = require("postcss")
 var assign = require("object-assign")
 
 module.exports = function() {
-    this.filter("postcss", function (data, config) {
+    var self = this
+    
+    self.filter("postcss", function (data, config) {
         // Combine our config with defaults using Object.assign
         config = assign({}, {plugins: [], options: {}}, config)
 
@@ -17,7 +19,10 @@ module.exports = function() {
                     return resolve({css: result.css})
                 })
                 .catch(function (err) {
-                    return reject(err)
+                    self.emit("plugin_error", {
+                      plugin: "fly-postcss",
+                      error: err
+                    })
                 })
         })
     })
