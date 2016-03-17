@@ -1,9 +1,10 @@
-let postcss = require("postcss")
+var postcss = require("postcss")
+var assign = require("object-assign")
 
 module.exports = function() {
-    this.filter("postcss", (data, config) => {
+    this.filter("postcss", function (data, config) {
         // Combine our config with defaults using Object.assign
-        let fullConfig = Object.assign({}, { plugins: [], options: {} }, config)
+        let fullConfig = assign({}, { plugins: [], options: {} }, config)
 
         // Return our promise out so we can wrap this async promise-based API
         return new Promise((resolve, reject) => {
