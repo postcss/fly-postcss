@@ -24,7 +24,7 @@ npm install -D fly-postcss
 ### Example
 
 ```js
-export default function* () {
+exports.default = function * () {
   yield this
     .source('src/*.css')
     .postcss({
