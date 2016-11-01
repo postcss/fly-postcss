@@ -6,7 +6,7 @@ const fixture = 'style.css'
 const src = path.join(__dirname, 'fixture')
 const dist = path.join(__dirname, 'tmp')
 
-test('fly-postcss', function (t) {
+test('fly-postcss', t => {
   t.plan(2)
 
   const fly = new Fly({
