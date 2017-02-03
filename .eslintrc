@@ -5,10 +5,12 @@
   "rules": {
     "semi": [2, "never"],
     "curly": 0,
-    "strict": 0
+    "strict": 0,
+    "quotes": "single"
   },
   "ecmaFeatures": {
     "arrowFunctions": true,
-    "blockBindings": true
-  },
+    "blockBindings": true,
+    "generators": true
+  }
 }
