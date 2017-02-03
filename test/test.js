@@ -10,16 +10,18 @@ test('fly-postcss', t => {
   t.plan(2)
 
   const fly = new Fly({
-    plugins: [{
-      func: require('../')
-    }],
+    plugins: [
+      require('../'),
+      require('fly-clear')
+    ],
     tasks: {
-      fixture: function * () {
-        t.ok(fly['postcss'], '`postcss` plugin successfully attached')
-        yield this.source(path.join(src, fixture)).postcss({plugins: [require('autoprefixer')]}).target(dist)
-        var result = yield this.$.read(path.join(dist, fixture), 'utf8')
+      fixture: function * (self) {
+        t.ok(fly.plugins['postcss'], '`postcss` plugin successfully attached')
+        yield self.source(path.join(src, fixture)).postcss({plugins: [require('autoprefixer')]}).target(dist)
+        var result = yield self.$.read(path.join(dist, fixture), 'utf8')
         t.ok((result.length && /-webkit-box/.test(result)), '`postcss` transform is correct')
-        this.clear(dist)
+        yield self.clear(dist)
+        t.end()
       }
     }
   })
